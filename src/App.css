@@ -43,4 +43,9 @@ html {
   border: 1px solid rgba(0,0,0,0.75);
   border-radius: 20px;
   font-size: 1.4rem;
+  
+}
+
+.button:hover {
+  background-color: rgba(0,0,0,0.85);
 }
