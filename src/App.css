@@ -47,5 +47,10 @@ html {
 }
 
 .button:hover {
-  background-color: rgba(0,0,0,0.85);
+  background-color:rosybrown
+}
+
+.displayResult{
+  font-size: 6rem;
+  background-color:mediumturquoise
 }
