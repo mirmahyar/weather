@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function SearchBox() {
 
     const [query, setQuery] = useState('');
-    const [weather, setWeather] = useState('');
+    const [weather, setWeather] = useState(0);
 
     const SearchWeather = async (e) => {
         e.preventDefault();
@@ -18,7 +18,7 @@ function SearchBox() {
             const resp = await fetch(url);
             const data = await resp.json();
             console.log(data);
-            setWeather(data.weather[0].description);
+            setWeather(data.coord.lat);
         } catch (err) {
             console.error(err);
         }
@@ -28,13 +28,13 @@ function SearchBox() {
 
     return (
         <div>
-            <form className="form" onSubmit={SearchWeather} >
+            <form className="form" name="weather" onSubmit={SearchWeather} data-netlify="true">
                 <label className="label" htmlFor="query">City name : </label>
                 <input className="input" type="text" placeholder="i.e Tehran"
                     value={query} onChange={(e) => setQuery(e.target.value)} />
                 <button className="button" type="submit">Search</button>
             </form>
-            <p className="displayResult">
+            <p>
                 {weather}
             </p>
 
