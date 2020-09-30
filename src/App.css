@@ -53,6 +53,7 @@ html {
 
 
 .description{
+  display: grid;
   font-family: 'Permanent Marker', cursive;
   font-size: 10rem;
   margin-top: 25px;
