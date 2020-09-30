@@ -50,7 +50,12 @@ html {
   background-color:rosybrown
 }
 
-.displayResult{
-  font-size: 6rem;
-  background-color:mediumturquoise
+
+
+.description{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 10rem;
+  margin-top: 25px;
+  border-radius: 5px;
+  border-style: ridge;
 }
