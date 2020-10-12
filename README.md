@@ -5,4 +5,6 @@ Used Open Weather Map API for this project.
 
 HTML, CSS, JAVASCRIPT (REACT.JS library)
 
+This is my first JAM stack style web app, which is a philosophy that websites may have No complicated backend part, just JS, API calls, Markup. 
+
 Check out Demo ------> https://simple-react-weatherapp.netlify.app/
