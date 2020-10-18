@@ -1,19 +1,28 @@
 html {
   font-size: 10px;
+  background-image: url("./weather-background.jpg");
+
 }
 
 .container {
-  margin: 0 auto;
+  
+  margin:15px auto;
   max-width:1000px;
-  padding: 40px;
+  padding: 2px;
+  border: solid 3px;
+  box-shadow: 10px;
+  background: linear-gradient(180deg, rgba(36,36,0,1) 1%, rgba(47,239,244,0.28893555713300945) 58%);
 }
 
 .header {
   font-size: 4rem;
-  background-color: lightpink;
+  /*background-color: lightpink*/;
   text-align: center;
   margin-bottom: 50px;
   border-style: dotted;
+  margin-top: 0;
+  color:lightcyan
+  
     
 }
 
@@ -22,9 +31,10 @@ html {
   
 }
 .label {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .input {
@@ -42,7 +52,7 @@ html {
   padding: 1rem 2rem;
   border: 1px solid rgba(0,0,0,0.75);
   border-radius: 20px;
-  font-size: 1.4rem;
+  font-size: 3rem;
   
 }
 
@@ -59,4 +69,6 @@ html {
   margin-top: 25px;
   border-radius: 5px;
   border-style: ridge;
+  text-align: center;
+  background-color: lightblue;
 }
