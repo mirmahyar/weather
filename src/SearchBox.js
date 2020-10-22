@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import userID from "./config/keys"
 
 
 
@@ -13,10 +14,10 @@ function SearchBox() {
         console.log("Submitting...")
 
 
-        //const key = "0443b36ad2bf74d27d89bf3bbe003dd5"
-
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=0443b36ad2bf74d27d89bf3bbe003dd5`;
-        // const url = `https://api.themoviedb.org/3/search/movie?api_key=5dcf7f28a88be0edc01bbbde06f024ab&language=en-US&query=${query}&page=1&include_adult=false`;
+        
+        const key = userID.key;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}`;
+       
         try {
             const resp = await fetch(url);
             const data = await resp.json();
