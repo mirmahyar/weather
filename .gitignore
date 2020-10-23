@@ -8,7 +8,7 @@
 .keys.js
 
 # testing
-/coverage
+src/config
 
 # production
 /build
